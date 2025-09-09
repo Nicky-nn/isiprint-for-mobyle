@@ -69,7 +69,6 @@ public class PrintService extends Service {
 
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle("RestPOS - Servicio de Impresión")
-                .setContentText("Servidor HTTP ejecutándose en puerto 7777")
                 .setSmallIcon(android.R.drawable.ic_menu_manage)
                 .setPriority(NotificationCompat.PRIORITY_LOW)
                 .setOngoing(true)

@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         // NO MOSTRAR NADA - solo pantalla vacía
         // Sin setContentView() para que no se muestre nada
+        // Solo mostrar toast de confirmación
+        Toast.makeText(this, "Servicio iniciado correctamente", Toast.LENGTH_SHORT).show();
+
 
         // Solo mostrar toast de confirmación
         Toast.makeText(this, "Servicio iniciado correctamente", Toast.LENGTH_SHORT).show();
@@ -33,8 +36,10 @@ public class MainActivity extends AppCompatActivity {
         } else {
             startService(serviceIntent);
         }
-        Log.d(VAR, "Cerrando actividad, el servicio continúa en segundo plano");
-        finish();
+        new Handler().postDelayed(() -> {
+            Log.d(VAR, "Cerrando actividad, el servicio continúa en segundo plano");
+            finish();
+        }, 1000); // Solo 1 segundo para que aparezca el toast
 
         // Cerrar la actividad inmediatamente - el servicio sigue corriendo
         new Handler().postDelayed(() -> {
