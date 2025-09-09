@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Filtro genérico para impresoras USB -->
+    <usb-device class="7" subclass="1" protocol="1" />
+    <!-- Filtro para dispositivos de la clase PRINTER -->
+    <usb-device class="7" />
+    <!-- Filtros específicos para marcas comunes de impresoras -->
+    <!-- Epson -->
+    <usb-device vendor-id="1208" />
+    <!-- Canon -->
+    <usb-device vendor-id="1193" />
+    <!-- HP -->
+    <usb-device vendor-id="1008" />
+    <!-- Brother -->
+    <usb-device vendor-id="1273" />
+    <!-- Zebra -->
+    <usb-device vendor-id="2655" />
+    <!-- Star Micronics -->
+    <usb-device vendor-id="1305" />
+    <!-- Citizen -->
+    <usb-device vendor-id="6790" />
+    <!-- Generic POS printers -->
+    <usb-device vendor-id="0416" />
+</resources>
