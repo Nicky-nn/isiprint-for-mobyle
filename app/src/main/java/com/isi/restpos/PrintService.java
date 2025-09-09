@@ -68,7 +68,7 @@ public class PrintService extends Service {
         Log.d(VAR, "Comando de inicio del servicio recibido");
 
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setContentTitle("RestPOS - Servicio de Impresión")
+                .setContentTitle("Servicio de Impresión")
                 .setSmallIcon(android.R.drawable.ic_menu_manage)
                 .setPriority(NotificationCompat.PRIORITY_LOW)
                 .setOngoing(true)

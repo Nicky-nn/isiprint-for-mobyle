@@ -18,12 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d(VAR, "Iniciando MainActivity...");
 
-        // NO MOSTRAR NADA - solo pantalla vacía
-        // Sin setContentView() para que no se muestre nada
-        // Solo mostrar toast de confirmación
-        Toast.makeText(this, "Servicio iniciado correctamente", Toast.LENGTH_SHORT).show();
-
-
         // Solo mostrar toast de confirmación
         Toast.makeText(this, "Servicio iniciado correctamente", Toast.LENGTH_SHORT).show();
 
