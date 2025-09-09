@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">restPOS</string>
-    <string name="app_ready_message">¡LISTO!</string>
+    <string name="app_name">isiPrint</string>
+    <string name="app_ready_message">Listo!</string>
 </resources>
